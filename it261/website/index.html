@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="inner-header">
+            <a href="index.html">
+                <img id="logo" src="images/php_logo.png" alt="logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Daily</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end inner header -->
+    </header>
+    
+    <div id="wrapper">
+
+        <div id="hero">
+            <img src="images/twelve.jpeg" alt="Twelve is greater than 3">
+        </div>
+        <!-- end hero -->
+        
+        <main>
+            <h1>Welcome to our Web App Programing Class!</h1>
+            <h2>We are going to learn PHP!</h2>
+            <p>Integer tempor iaculis diam. Nullam dictum lorem sit amet quam malesuada dignissim. Maecenas pharetra placerat odio, eu faucibus neque mollis ac. Praesent quis libero eu purus semper convallis et a purus. Sed vitae maximus ante. Sed pretium sem a magna lobortis, eget euismod ex gravida. Maecenas lacinia tortor eros, ac pharetra tellus hendrerit nec. Integer in mi bibendum nunc laoreet cursus eget sit amet quam. In leo mauris, fermentum et nunc in, suscipit interdum eros. Praesent a nisl id nunc venenatis pellentesque in at tellus.</p>
+            <h2>Another Headline 2!</h2>
+            <p> Quisque tincidunt hendrerit mauris, eu tempor est tincidunt in. Phasellus ipsum dui, condimentum quis libero at, egestas placerat odio. Nullam tortor dui, pellentesque ut magna ut, aliquet tincidunt massa. Quisque venenatis orci mauris, vitae laoreet turpis gravida dictum. Aenean eget lorem elit.</p>
+
+            
+
+        </main>
+
+
+        <aside>
+            <h3>This is our headline three in our beatiful aside</h3>
+            <p>Praesent ullamcorper fermentum tortor, sed gravida odio lacinia et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec facilisis, mauris pellentesque congue varius, lectus turpis vestibulum nunc, a condimentum magna nulla efficitur est. Donec at erat et sapien luctus vestibulum id ut orci. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+
+        </aside>
+    </div>
+    <!-- end wrapper -->
+
+    <footer>
+        <ul>
+            <li>Copyright &copy;
+                2022</li>
+            <li>All Rights Reserved</li>
+            <li><a href="../index.php">Web Design by Guowei Kong</a></li>
+            <li><a id="html-checker" href="#">HTML Validation</a></li>
+            <li><a id="css-checker" href="#">CSS Validation</a></li>
+        </ul>
+
+        <script>
+                document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </footer>
+</body>
+</html>
