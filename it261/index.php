@@ -23,24 +23,54 @@
             </ul>
         </nav>
 
-        <main>
+        <div id = "hero">
             <h2>About Guowei</h2>
             <img class="right" src="images/guowei.jpg" alt="guowei">
-            <p>A paragraph about myself. i.e., goals, background, hobbies etc. Integer egestas odio vulputate lacus vestibulum ultricies. Vestibulum odio lacus, sodales a accumsan quis, mollis quis diam. Proin lobortis sit amet mauris ac finibus. Nulla dignissim aliquam urna, quis cursus purus lacinia placerat. Donec et mauris at lacus pulvinar tempus. Nulla id risus in eros lobortis dapibus ac at neque. Aenean varius urna fringilla ante commodo consequat. Donec vel nisl nulla.</p>
-            <img src="images/screenshot.png" alt="screenshot">
+            <p>Hello! I'm Guowei Kong, currently enrolled in the Web Development program at Seattle Central College. My educational journey has introduced me to HTML, CSS, JavaScript, and I'm currently diving into PHP. My enthusiasm for technology drives me to explore web design, programming, and the creation of user-friendly websites. Outside of class, I enjoy exploring the scenic Seattle area with friends. I'm also a tennis enthusiast, even though I don't consider myself a pro on the court.</p>
+            
+
+        </div>
+
+
+        <main>
+            <h2>MAMP Setup</h2>
+            <img src="images/mamp.png" alt="MAMP set up">
+            <h2>PHP Errors Displaying</h2>
+            <img src="images/display_error.png" alt="display errors">
         </main>
 
         <aside>
             <h2>Weekly Class Exercises</h2>
             <h3>Week 2</h3>
                 <ol>
-                    <li><a href="var.php">var.php</a></li>
-                    <li><a href="">var2.php</a></li>
-                    <li><a href="">3.php</a></li>
-                    <li><a href="">4.php</a></li>
+                    <li><a href="weeks/week2/var.php">var.php</a></li>
+                    <li><a href="weeks/week2/vars2.php">vars2.php</a></li>
+                    <li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
+                    <li><a href="weeks/week2/currency.php">currency.php</a></li>
                 </ol>
+
+                <h3>Week 3</h3>
+                <h3>Week 4</h3>
+                <h3>Week 5</h3>
+                <h3>Week 6</h3>
+                <h3>Week 7</h3>
         </aside>
 
+        <footer>
+        <ul>
+            <li>Copyright &copy;2022</li>
+            <li>All Rights Reserved</li>
+            <li><a href="index.php">Web Design by Guowei Kong</a></li>
+            <li><a id="html-checker" href="#">HTML Validation</a></li>
+            <li><a id="css-checker" href="#">CSS Validation</a></li>
+        </ul>
+
+        <script>
+                document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+
+        </footer>
     </div>
     <!-- close wrapper -->
 

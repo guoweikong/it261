@@ -7,7 +7,7 @@
 }
 
 body {
-    background: lavender;
+    background: rgb(180, 180, 179);
 }
 
 #wrapper {
@@ -17,7 +17,7 @@ body {
 
 nav {
     height: 60px;
-    background: lightseagreen;
+    background: rgb(38, 87, 124);
     line-height: 60px;
     margin-bottom: 20px;
 }
@@ -34,6 +34,15 @@ nav a {
     text-decoration: none;
 }
 
+#hero {
+    height: 300px;
+    background-color: rgb(205, 145, 110);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+
 main {
     width:62%;
     float: left;
@@ -47,6 +56,25 @@ aside {
 .right {
     float: right;
     margin-left: 30px;
+}
+
+footer{
+    height:60px;
+    line-height:60px;
+    background: rgb(38, 87, 124);
+    clear: both;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li{
+    justify-content: center;
+    margin: 0 15px;
+    color: aliceblue;
 }
 
 /* typorgraphy */
@@ -63,6 +91,48 @@ h2 {
     margin-bottom: 20px;
 }
 
+p {
+    font-size: 1.3em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 main h2, aside h2 {
     text-align: left;
+    margin-top: 10px;
+}
+
+aside h3 {
+    font-size: 1.5em;
+    margin: 20px 20px;
+}
+
+aside li {
+    font-size: 1.2em;
+    margin:10px 50px;
+    color:blue;
+}
+
+#hero h2, p {
+    float: left;
+    width: 600px;
+    margin-left: 50px ;
+    /* padding: 10px auto; */
+}
+
+#hero img {
+    float: right;
+    height: 250px;
+    margin-right: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+a:link {
+    color:blue;
 }
