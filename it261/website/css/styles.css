@@ -7,12 +7,14 @@
 }
 
 body {
-    background-color: beige;
+    /* background-color: beige; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-image: url("../images/seattle.webp"); */
 }
 
+
 header {
-    background-color: yellow;
+    background-color: rgb(86, 124, 173);
     /* height:200px; */
     padding:20px 0;
 }
@@ -72,6 +74,8 @@ background: lightsalmon;
 float: right;
 }
 
+
+
 footer{
     height:60px;
     line-height:60px;
@@ -117,3 +121,43 @@ h1, h2, h3 {
     margin-bottom: 10px;
     font-family: playfair;
 }
+
+
+/* daily page CSS */
+
+
+
+.daily_inner main {
+    background-color:transparent;
+    }
+    
+    
+    .daily_inner p {
+    margin-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    }
+    
+    .daily_inner aside {
+    background-color: rgb(173, 190, 222);
+    padding:20px;
+    }
+
+    
+    
+    .daily_inner main ul {
+        margin-left: 20px;
+        margin-top: 20px ;
+        list-style-type: none;
+    }
+    
+    .daily_inner main li {
+        padding: 6px;
+        font-weight: bold; 
+    }
+    
+    .daily_inner main a {
+        text-decoration: none;
+    }
+
+   
