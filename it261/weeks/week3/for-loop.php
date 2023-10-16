@@ -55,11 +55,11 @@
         </tr>   
 
         <?php
-            for($cel = 0; $cel <= 100; $cel += 5) {
+            for($cel = 0; $cel <= 100; $cel += 3) {
                 $far = ($cel * 9/5) + 32;
                 echo '<tr>';
                 echo '<td> '.$cel.' degrees </td>';
-                echo '<td> '.$far.' degrees </td>';
+                echo '<td> '.number_format($far).' degrees </td>';
                 echo '</tr>';
             }
 
