@@ -60,6 +60,15 @@
                     <li><a href="weeks/week3/switch.php">switch.php</a></li>
                 </ol>
                 <h3>Week 4</h3>
+                <ol>
+                    <li><a href="weeks/week4/adder.php">adder.php</a></li>
+                    <li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
+                    <li><a href="weeks/week4/celcius.php">celcius.php</a></li>
+                    <li><a href="weeks/week4/form-get.php">form-get.php</a></li>
+                    <li><a href="weeks/week4/form1.php">form1.php</a></li>
+                    <li><a href="weeks/week4/form2.php">form2.php</a></li>
+                    <li><a href="weeks/week4/form3.php">form3.php</a></li>
+                </ol>
                 <h3>Week 5</h3>
                 <h3>Week 6</h3>
                 <h3>Week 7</h3>
