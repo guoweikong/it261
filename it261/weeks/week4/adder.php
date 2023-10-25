@@ -1,20 +1,3 @@
-<?php     //adder-wrong.php
-
-if (isset($_POST['num1'], 
-          $_POST['num2'])){
-$num1 = $_POST['num1'];
-$num2 = $_POST['num2'];
-$my_total = $num1 + $num2;
-echo '<h2>You added '.$num1.' and '.$num2.'</h2>';
-echo '<p> and the answer is </p>
-<p style="color:red;"> '.$my_total.'!</p>';
-echo'<p><a href="">Reset page</a></p>';
-}
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +17,32 @@ echo'<p><a href="">Reset page</a></p>';
 <input type="number" name="num2"><br>
 <input type="submit" value="Add Em!!"> 
 </form>
+
+<?php     
+
+if (isset($_POST['num1'], 
+          $_POST['num2'])){
+
+    if(empty($_POST['num1'] &&
+             $_POST['num2'])) {
+
+                echo '<p> Please fill out all of the fields</p>';
+
+             } else { 
+
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+    $my_total = $num1 + $num2;
+    echo '<h2>You added '.$num1.' and '.$num2.'</h2>';
+    echo '<p> and the answer is </p>
+    <p style="color:red;"> '.$my_total.'!</p>';
+    echo'<p><a href="">Reset page</a></p>';
+
+        }  
+    }
+
+?>
+
 
 </body>
 </html>
@@ -64,3 +73,5 @@ echo'<p><a href="">Reset page</a></p>';
 <!-- change type="text" to type="number" on line 34-->
 <!-- missing " at the end of line 35 -->
 <!-- delete extra symbols ';{?> on the last line  -->
+<!-- put <?php  ?> inside<body> and after </form> -->
+<!-- add if(empty) inside is(isset) loop -->
