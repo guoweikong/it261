@@ -54,6 +54,8 @@ form ul{
     background-color: grey;
 }
 
+
+
 .box p {
     font-size: 1.25em;
     color: white;
@@ -61,11 +63,12 @@ form ul{
 
 .box2 {
 text-align: center;
-margin-top: 10px;
+margin-top: 20px;
 }
 
 .box2 h2 {
-margin: 10px  auto;
+margin: 20px  auto;
+color: mediumpurple;
 }
 
 .error {

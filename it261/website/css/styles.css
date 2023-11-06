@@ -12,6 +12,10 @@ body {
     /* background-image: url("../images/seattle.webp"); */
 }
 
+.current {
+    color:red;
+}
+
 
 header {
     background-color: rgb(86, 124, 173);

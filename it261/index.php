@@ -81,6 +81,11 @@
                     <li><a href="weeks/week5/null.php">null.php</a></li>
                 </ol>
                 <h3>Week 6</h3>
+                <ol>
+                    <li><a href="weeks/week6/form.php">form.php</a></li>
+                    <li><a href="weeks/week6/form2.php">form2.php</a></li>
+                    <li><a href="weeks/week6/functions.php">functions.php</a></li>
+                </ol>
                 <h3>Week 7</h3>
         </aside>
 
