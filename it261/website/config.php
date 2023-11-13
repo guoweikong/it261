@@ -34,6 +34,11 @@ switch(THIS_PAGE) {
     $title = 'Gallery Page of Our Website Project';
     $body = 'gallery_inner';
     break;
+
+    case 'thx.php':
+    $title = 'Thanks Page of Our Website Project';
+    $body = 'thx_inner';
+    break;
 }
 // our navigational array!
 $nav = array(
@@ -270,7 +275,7 @@ if(isset( $_POST['first_name'],
           $_POST['comments'],
           $_POST['privacy'])) {
 
-        $to = 'guoweikong2020@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Test email on  '.date('m/d/y, h i A');
         $body = '
         First Name: '.$first_name.'  '.PHP_EOL.'
@@ -285,7 +290,7 @@ if(isset( $_POST['first_name'],
         ';
 
         $headers = array (
-            'From' => 'noreply@gmail.com'
+            'From' => 'noreply@mystudentswa.com'
         );
 
         // we will be adding an if statement - that this email form will work ONLY if all the fields are filled out!!
@@ -308,3 +313,22 @@ if(isset( $_POST['first_name'],
           } // end isset
 
 } //closing server request method
+
+
+$photos[0] = 'photo1';
+$photos[1] = 'photo2';
+$photos[2] = 'photo3';
+$photos[3] = 'photo4';
+$photos[4] = 'photo5';
+
+$i = rand(0, 4);
+
+function random_images($photos) {
+$my_return = '';
+$i = rand(0, 4);
+$selected_image = ''.$photos[$i].'.png';
+$my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'" >';
+return $my_return;
+} // end function
+
+// echo random_images($photos);
