@@ -93,6 +93,13 @@
                     <li><a href="weeks/week7/rand.php">rand.php</a></li>
                     <li><a href="weeks/week7/strings.php">strings.php</a></li>
                 </ol>
+                <h3>Week 8</h3>
+                <ol>
+                    <li><a href="weeks/week8/config.php">config.php</a></li>
+                    <li><a href="weeks/week8/credentials.php">credentials.php</a></li>
+                    <li><a href="weeks/week8/people.php">people.php</a></li>
+                    <li><a href="weeks/week8/people-view.php">people-view.php</a></li>
+                </ol>
         </aside>
 
         <footer>
