@@ -20,9 +20,9 @@ switch(THIS_PAGE) {
     $body = 'daily_inner';
     break;
 
-    case 'project.php':
-    $title = 'Project Page of Our Website Project';
-    $body = 'project_inner';
+    case 'movie.php':
+    $title = 'Movie Page of Our Website Project';
+    $body = 'movie_inner';
     break;
 
     case 'contact.php':
@@ -45,7 +45,7 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'movie.php' => 'Movie',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery',
 );
@@ -339,4 +339,35 @@ $people['Amanda_Knox'] = 'knox_Famous author, activist, and journalist.';
 $people['Jeff_Bezos'] = 'jeff_Former CEO and founder of Amazon.com.';
 $people['Eddie_Vedder'] = 'eddi_Lead singer of Pearl Jam.';
 $people['Rainn_Wilson'] = 'rain_An American actor, comedian.';
+
+
+
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+ 
+
+ 
+
+ 
+
+ 
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
+}
+
 
