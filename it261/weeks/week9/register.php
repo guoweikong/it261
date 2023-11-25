@@ -1,0 +1,42 @@
+<?php
+include('server.php');
+// eventually we will be connecting to our header include
+// include('./includes/header.php');
+
+?>
+
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
+<!-- first_name, last_name, email, username, password1, password2 -->
+
+<lavel>First name</label>
+<input type="text" name="first_name" value="<?php if(isset($_POST['first_name'])) echo htmlspecialchars($_POST['first_name']) ;?>">
+
+
+<lavel>Last name</label>
+<input type="text" name="last_name" value="<?php if(isset($_POST['last_name'])) echo htmlspecialchars($_POST['last_name']) ;?>">
+
+
+<lavel>Email</label>
+<input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']) ;?>">
+
+
+<lavel>Username</label>
+<input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlspecialchars($_POST['username']) ;?>">
+
+<lavel>Password</label>
+<input type="password" name="password1" value="<?php if(isset($_POST['password1'])) echo htmlspecialchars($_POST['password1']) ;?>">
+
+<lavel>Confirm your password</label>
+<input type="password" name="password2" value="<?php if(isset($_POST['password2'])) echo htmlspecialchars($_POST['password2']) ;?>">
+
+<button type="submit" name="reg_user" class="btn">Register!</button>
+
+<button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>' ">Reset </button>
+
+
+
+
+</form>
+
+<?php
+include('errors.php') ;?>
