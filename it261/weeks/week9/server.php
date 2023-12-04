@@ -145,7 +145,7 @@ if(isset($_POST['login_user'])) {
             header('Location:index.php');
         } else {
 
-            array_push($error, 'Wrong username/password combo!!');
+            array_push($errors, 'Wrong username/password combo!!');
         }
 
 

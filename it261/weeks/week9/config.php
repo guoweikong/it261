@@ -6,6 +6,8 @@ include('credentials.php');
 
 $errors = array();
 
+$success = 'You have successfully logged on!';
+
  
 
  
